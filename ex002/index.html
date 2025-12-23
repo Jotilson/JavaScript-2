@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>Funções em JS</h1>
+     
+    <button onclick="mostrarAlerta()" class="p-4 bg-blue-500 block m-auto rounded text-red-200 font-bold ">Clique</button>
+    <p id="texto"></p>
+    <button onclick="mostrarTexto()" class="p-4 bg-blue-500 rounded text-red-200 font-bold ">Mostrar</button>
+   
+</body>
+</html>
+
+<script>
+    //Função simples
+    function dizerola(){
+        console.log(`Olá, Mundo!`)
+    }
+    //Função com onclick
+    function mostrarAlerta(){
+        alert(`Você clicou no botão`)
+    }
+    //Função com parâmetros
+    function somar(a,b){
+        console.log(a+b)
+    }
+    //Função com retorno
+    function mult(a,b){
+      return a*b
+    }
+    //Arrow function
+    const dividir = (a,b) => (a/b)
+   //Função que muda o HTML
+    function mostrarTexto(){
+        document.getElementById('texto').textContent='Texto inserido pelo JS'
+    }
+    const resultado=mult(5,3)
+    const res=dividir(10,2)
+    somar(5,9)
+    dizerola()
+    console.log(`Produto: ${resultado}`)
+    console.log(`Quociente: ${res}`)
+</script>

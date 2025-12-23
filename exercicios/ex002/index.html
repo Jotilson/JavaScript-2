@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+ <h1>Ex002</h1>
+ <p id="txt">Olá</p>
+ <button onclick="swap()">Mudar o Texto</button> <br>
+ <button onclick="mostrarpessoa()">Mostrar Dados</button>
+    
+</body>
+</html>
+<script>
+   const nome=(a) => a
+   const b=nome("Domingos")
+   console.log(`Nome: ${b}`)
+
+   const soma=(a,b) =>a+b
+   const res=soma(5,3)
+   console.log(`Soma: ${res}`)
+   function swap(){
+   
+    if(document.getElementById('txt').textContent==="Olá, Mundo!"){
+        document.getElementById('txt').textContent=""
+    }else{
+        document.getElementById('txt').textContent="Olá, Mundo!"
+    }
+
+   }
+   //Objeto
+   const pessoa={
+    nome:"Domingos",idade:16
+   }
+    function mostrarpessoa(){
+        alert(`Nome: ${pessoa.nome} e tenho ${pessoa.idade} anos de idade`)
+    }
+   
+</script>
