@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Estruturas Lógicas</h1>
+    <h2>Condicionais</h2>
+    <h2>Loops</h2>
+
+    <input type="number" name="idade" id="idaid" placeholder="informe a sua idade aqui" min="0" max="100">
+
+    <button onclick="verificarIdade()">Verificar</button>
+    
+</body>
+</html>
+<script>
+    function verificarIdade(){
+let idade=Number(document.getElementById('idaid').value)
+
+        if(idade>=18){
+          document.getElementById('idaid').placeholder='ola'
+        }else{
+            alert(`Menor de idade`)
+        }
+    }
+</script>
