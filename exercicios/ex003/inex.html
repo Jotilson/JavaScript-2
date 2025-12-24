@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Ex003</h1>
+    <main>
+        <p id="numero"></p>
+        <input type="number" name="numer" id="numeroid" placeholder="informe um numero">
+       
+        <p id="idade"></p>
+        <input type="number" name="idad" id="idaid" placeholder="informe a sua idade">
+        
+        <button id="botao" onclick="verificar()">Verificar</button>
+        
+    </main>
+</body>
+</html>
+<script>
+    function verificar(){
+        let idade =Number(document.getElementById('idaid').value)
+       
+        let numero=Number(document.getElementById('numeroid').value)
+        if(numero>10){
+     document.getElementById('numero').textContent='O número inserido é maior de 10'
+        }else{
+             document.getElementById('numero').textContent='O número inserido é menor de 10'
+        }
+
+        if(idade==0){
+            while(idade==0){
+ alert(`Informe a sua idade`)
+ document.getElementById('botao').style.display="flex"
+ return body
+            }
+       
+        }else if(idade>0){
+     document.getElementById('idade').textContent='Idade válida!'
+        }else{
+            document.getElementById('idade').textContent='Idade inválida!'
+        }
+
+    }
+
+</script>
