@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Ex004</h1>
+    <p id="txt"></p>
+  
+    <p id="txt2"></p>
+
+    <p id="txt3"></p>
+
+    <p id="txt4"></p>
+
+      <button id="mostrar" onclick="mostrarInfo()">Mostrar</button>
+    
+</body>
+</html>
+<script>
+    function mostrarInfo(){
+          const carro ={
+        marca:"BWM",ano:2020,cor:"branco"
+    }
+   carro.preco=1000
+   carro.ano=2026
+   document.getElementById('txt').textContent=carro.preco
+
+    const Dados=[
+        {nome:"Domingos",idade:16},
+        {nome:"Paula",idade:18},
+        {nome:"Inês",idade:20}
+    ]
+    const nomes=Dados.map(us=>us.nome)
+    document.getElementById('txt2').textContent=nomes
+
+  const idades=[]
+let n=0
+    for(let i=0;i<3;i++){
+      if(Dados[i].idade>=18){
+        idades[n]=Dados[i].idade
+      n++
+    }
+    }
+    document.getElementById('txt3').textContent=idades
+
+
+     const somaIdades= Dados.reduce((total,us)=>{return total+us.idade},0)
+      document.getElementById('txt4').textContent=somaIdades
+
+    }
+
+   
+   
+</script>
