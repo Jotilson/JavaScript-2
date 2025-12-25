@@ -15,7 +15,7 @@
 
     <p id="txt4"></p>
 
-      <button id="mostrar" onclick="mostrarInfo()">Mostrar</button>
+      <button id="btn" onclick="mostrarInfo()">Mostrar</button>
     
 </body>
 </html>
@@ -44,6 +44,7 @@ let n=0
       n++
     }
     }
+     document.getElementById('btn').textContent="Fechar"
     document.getElementById('txt3').textContent=idades
 
 
@@ -51,6 +52,7 @@ let n=0
       document.getElementById('txt4').textContent=somaIdades
 
     }
+   
 
    
    
