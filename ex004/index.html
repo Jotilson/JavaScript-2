@@ -8,15 +8,37 @@
     <h1>Arrays e Objetos</h1>
     <h2>Ex004</h2>
     <p id="mostrar"></p>
+    <button onclick="pessoa()">mostrar</button>
     
 </body>
 </html>
 <script>
-    let pais=["Angola","Portugal","USA","Canada","Russia"]
+     let pais=["Angola","Portugal","USA","Canada","Russia"]
     pais.push("Brasil")
     alert(`Tamanho do array: ${pais.length}`)
      alert(`Primeiro pais é ${pais[0]}`)
       alert(`O último país é: ${pais[pais.length-1]}`)
 
+   function pessoa () {
+      const pesso = {
+        nome:"Domingos",
+        idade:16,
+        raca:"negra"
+    }
+   
+  const usuarios=[
+    {nome:"Domingos",idade:16},
+  {  nome:"Ana",idade:20},
+  {nome:"Pedro",idade:15}
 
+  ]
+  const nomes= usuarios.map(user => user.nome)
+  alert(`${nomes}`)
+  const SomarIdades = usuarios.reduce((total,user)=>{ return total+user.idade},0)
+    alert(`${SomarIdades}`)
+
+ 
+   }
+  
+ 
 </script>
