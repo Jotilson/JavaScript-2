@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Sistema de Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+     <link rel="stylesheet" href="estilos/mq.css">
+   
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+     <script src="https://kit.fontawesome.com/f220fb1464.js" crossorigin="anonymous"></script>
+    <script src="scrips.js"></script>
+    <script>alert(`Somente mostramos os registros dos maiores de idade`)</script>
 </head>
-<body>
+<body >
+    
+    <main>
+        <section class="design">
+            <div class="imagem">
+            </div>
+            
+         <div class="texto">
+             <h1>Sistema de Cadastro</h1>
+             
+           <p>Seja Bem Vindo ao Meu sistema de cadastro</p>
+           
+            <form action="cadastro.php">
+               
+                    <article>
+                       
+                        
+                        <div class="in">
+                            <i id="i1" class="fa-regular fa-circle-user fa-xl"></i>
+                            <input class="in2" type="text" name="nome" id="nomeid" placeholder="Informe o seu nome"></div>
+                            
+                        <div  class="in">
+                             <i id="i1" class="fa-solid fa-person-arrow-up-from-line fa-xl"></i>
+                            <input type="number" name="idade" id="idaid" placeholder="Informe a sua idade" class="in2" ></div>
+                    </article>
+                                </form>
+                                <div class="btn">
+                        <button id="btnCadastrar" onclick="cadastrarPessoas()">Cadastrar</button>
+                                                    <button onclick="listarPessoas()">Mostrar Dados</button>
+                                </div>
+                                </div>
+
+                    
+                
+        </section>
+        <section class="dados"hidden id="dados">
+            <div class="header">Dados <a href="#" onclick="esconder()"><i class="fa-solid fa-xmark fa-xl" style="color: #f1f2f3;"></i></a></div><br><br><br><br>
+        <pre id="listar" style="width: 95%; display: block; height: 100vh;color: white;font-weight: bold;font-family: Arial, Helvetica, sans-serif;">
+                <pre id="listar2">   </pre></pre>
+    </section>
+       
+    </main>
     
 </body>
 </html>
+   

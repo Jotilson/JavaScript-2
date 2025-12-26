@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+     background-image: linear-gradient(to bottom,rgba(25, 210, 81, 0.716),rgba(113, 253, 113, 0.716));
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+    
+    
+main{
+ margin: auto;
+ width: 100vw;
+ height: 85vh;
+   
+}
+.design{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    background-color: white;
+     width: 80vw;
+   height: 80vh;
+   border-radius: 5px;
+   box-shadow: 2px 2px 4px black;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   transition: width 1s ease, height 1s ease-in-out;
+}
+
+section h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 2%;
+}
+section p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.dados{
+    background-color: rgba(0, 0, 0, 0.543);
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.dados .header{
+    background-image: linear-gradient(to bottom,rgba(25, 210, 81, 0.716),rgb(23, 100, 23));
+color: white;
+font-weight: 800;
+font-family: Arial, Helvetica, sans-serif;
+position: fixed;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 47%;
+height: 10vh;
+}
+
+
+div.imagem{
+    background-image: url('../img/login_imagem_fb_68443fd9a2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+   border-top-left-radius:5px ;
+   border-top-right-radius:5px ;
+   margin-bottom: 0%;
+    
+}
+article{
+    display: flex;
+    flex-flow: column nowrap;
+     justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.in2{
+    width: 60vw;
+    height: 5.2vh;
+}
+.in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: rgb(79, 230, 119);
+    width: 60vw;
+    height: 6%;
+    border-radius: 5px;
+    
+   
+   
+}
+
+
+
+.btn{
+    margin-bottom: 5%;
+    margin-top: 7%;
+   
+}
+.btn button{
+    width: 60vw;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 5px;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.446);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
