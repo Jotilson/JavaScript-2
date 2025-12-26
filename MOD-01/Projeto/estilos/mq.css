@@ -82,7 +82,7 @@
     transition: border 1s ease-in-out;
 }
 .dados .header{
-    width: 48.8%;
+    width: 50%;
      transition: width 0.1s ease;
 }
    
