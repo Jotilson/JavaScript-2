@@ -2,8 +2,7 @@
     const Dados=[]
     const Dados3=[]
     let i=0
-let v=1
-//let b=0
+    let v=1
      function cadastrarPessoas(){
     
     if((document.getElementById('nomeid').value!=null || document.getElementById('nomeid').value!=0) &&( Number((document.getElementById('idaid')).value)!=0) ) {
@@ -11,16 +10,7 @@ let v=1
         nome:document.getElementById('nomeid').value,
         idade:Number((document.getElementById('idaid')).value)
       })
-      /*
-      let nomeDigitado=document.getElementById('nomeid').value
-      for(let letra of nomeDigitado){
-        if(!isNaN(letra)){
-      alert(`O seu nome não pode conter números!`)
-      b=1
-      break
-        }else{b=0}
-      }
-     */
+     
      let total=Dados.length
     if(total>1){
    

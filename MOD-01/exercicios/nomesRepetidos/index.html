@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Validação de Dados</h1>
+    <h3>Nomes</h3>
+    <form action="cadastro.php">
+    <p><input type="text" name="nom" id="nome" placeholder="Informe o seu nome aqui"></p>
+
+    </form>
+    <button onclick="addPeople()">
+        Enviar
+    </button>
+    <pre id="mostrar"></pre>
+    <button onclick="listarPeople()">Mostrar os Nomes</button>
+</body>
+</html>
+<script>
+    
+    const Dados=[]
+    const Dados2=[]
+    function addPeople(){
+        let texto="Domingos1"
+     for(let letra of texto){
+        if(!isNaN(letra)){
+            console.log(`Isto é um número!`)
+             break
+        }else{
+             console.log(`Isto não é um número!`)
+            
+        }
+     }
+    let v=1
+       if(document.getElementById('nome').value!=0){
+     Dados.push(
+        {nome:document.getElementById('nome').value}
+    )
+             
+    let total=Dados.length
+    if(total>1){
+       
+        for(let i=0;i<total-1;i++){
+    
+    if((Dados[i].nome)===document.getElementById('nome').value){
+               alert(`Este nome já foi registrado!`)
+               v=0
+               break
+            }else{
+                v=1
+            } 
+        }}
+        if(v===1){
+            
+        Dados2.push(
+        {nome2:document.getElementById('nome').value}
+    )
+
+        }
+    
+    document.getElementById('nome').value=""
+   
+        }else{
+            alert(`Preencha a caixa com o seu nome`)
+        }
+    }
+
+    function listarPeople(){
+        const nomes=Dados2.map(us=>us.nome2+`\n`)
+        document.getElementById('mostrar').textContent=nomes.join("\n")
+    }
+
+</script>
