@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main >
+       
+        <header>
+            <h1>Meteorologia Atual</h1>
+            <p>Fique atento ao tempo da sua cidade!</p>
+             <aside id="imga"><img id="img" alt=""></aside>
+        </header>
+
+        <aside class="pesquisa">
+            <p><label for="nameCity">Informe o nome da cidade <input type="text" name="" id="nameCity"></label></p>
+            <p>ou primeiro o nome do pais e depois a cidade. Ex: Portugal, Viana</p><br>
+            <button type="submit" id="btnBuscar">Buscar</button>
+        </aside>
+        <br><br>
+        <fieldset>
+
+            <div><p>Nascer do Sol:</p>
+                <p id="nascSol"></p>
+            </div>
+
+             <div><p>Pôr do Sol:</p><p id="porSol"></p>
+             </div>
+            <div>
+               
+             <p>Cidade:</p> <p id="nomeCity"></p>
+            </div>
+            <div><p>País:</p><p id="pais"></p></div>
+            <div>
+                <p>Estado do clima:</p> <p id="estado"></p>
+            </div>
+            <div><p>Temperatura:</p><p id="temp"></p></div>
+            <div><p>Temperatura mínima:</p><p id="tpmin"></p></div>
+            <div><p>Temperatura máxima:</p><p id="tpmax"></p></div>
+            <div>
+                <p>Sensação Térmica:</p><p id="st"></p>
+            </div>
+            <div><p>Umidade:</p><p id="umid"></p></div>
+            <div><p>Pressão:</p><p id="ps"></p></div>
+            <div><p>Visibilidade:</p><p id="vs"></p></div>
+            <div><p>Vento:</p><p id="vt"></p></div>
+            <div><p>Nuvem:</p><p id="nv"></p></div>
+            <div><p>Nível do mar:</p><p id="nvM"></p></div>
+        </fieldset>
+    </main>
+</body>
+</html>
+<script src="javascript/scripts.js"></script>

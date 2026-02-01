@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>EX003</h1>
+    <form id="formulario" action="cadastro.php">
+        <fieldset>
+            <p><input type="text" name="" id="nombre" required placeholder="Informe o seu email aqui"></p>
+            <p><input type="number" name="" id="years" min="0" required placeholder="Informe a sua idade aqui" value="0"></p>
+            
+            <button type="submit">Mostrar</button>
+        </fieldset>
+        
+    </form>
+    <p id="mensagem">
+    </p>
+    
+</body>
+</html>
+<script>
+    const form=document.getElementById("formulario")
+    form.addEventListener("submit",function(e){
+        e.preventDefault()
+    })
+    const nome=document.getElementById("nombre")
+    const idade=document.getElementById("years")
+    const p=document.getElementById("mensagem")
+
+ 
+    nome.addEventListener("input",function(){
+        idade.addEventListener("input",function(){
+                if(nome.value.length>3 && idade.value>0 && nome.value.includes("@") && nome.value.toLowerCase().includes(".com".toLowerCase())){
+                     p.textContent=`Nome: ${nome.value} | Idade: ${idade.value}`
+                }
+                
+            })
+        
+        if(nome.value.length<3 && idade.value<=0 ){
+       p.textContent="Digita mais de 3 letras e idade maior de zero! E no seu email deve conter o @ e no final .com"
+        }else if(nome.value.length>3 && idade.value>0 && nome.value.includes("@") && nome.value.toLowerCase().includes(".com".toLowerCase())){
+            idade.addEventListener("input",function(){
+                if(nome.value.length>3 && idade.value>0 && nome.value.includes("@") && nome.value.toLowerCase().includes(".com".toLowerCase())){
+                     p.textContent=`Nome: ${nome.value} | Idade: ${idade.value}`
+                }
+                
+            })
+            
+            nome.value=nome.value.toLocaleUpperCase()
+            p.textContent=`Nome: ${nome.value} | Idade: ${idade.value}`
+        }
+    })
+   
+    
+</script>

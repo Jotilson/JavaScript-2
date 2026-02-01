@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body><h1>DOM Essentials</h1>
+    <p><abbr title="Document Object Model">DOM</abbr>oi</p>
+    <div id="div"></div>
+    
+</body>
+</html>
+<script>
+const titulo= document.querySelector("#div").innerHTML="<blockquote>Ola</blockquote>"
+    console.log(document)
+  
+    const p =document.createElement("p");
+    p.textContent="Paragrafo criado pelo JS"
+    document.body.appendChild(p);
+    p.style.color="red"
+    p.style.fontSize="20px"
+</script>

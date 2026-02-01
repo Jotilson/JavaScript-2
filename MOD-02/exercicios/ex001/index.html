@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+   
+</head>
+<body>
+    <h1 id="txt" >MOD-02</h1>
+  
+    <h3>EX001</h3>
+    <p><input type="text" name="te" id="texto" placeholder="Informe o texto"></p>
+    
+  
+
+    <button onclick="criarP()">Mostrar o texto</button>
+    <ul id="lista"></ul>
+    <div id="di"></div>
+      
+</body>
+</html>
+<script>
+    const div=document.getElementById("di")
+    
+    document.getElementById("txt").textContent=("MOD02")
+    function criarP(){
+    const p=document.createElement("p")
+    p.textContent=document.getElementById("texto").value
+    document.body.appendChild(p)
+   
+    const nome=document.getElementById("texto").value
+console.log(`${nome}`);
+    div.innerHTML+=
+    
+   ` <h3 style="background-color:blue;color:red;font-weight:bolder;font-family:arial;display:inline-block;padding:10px;border-radius:10px">${nome}</h3>`;
+   
+
+   const li=document.createElement("li")
+   li.textContent=("boa")
+    document.getElementById("lista").appendChild(li)
+    
+   
+   
+    }
+
+</script>

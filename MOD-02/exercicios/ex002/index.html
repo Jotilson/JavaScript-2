@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="document">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>EX002</h1>
+    <input type="text" name="" id="nombre">
+    <p id="saida"></p>
+   <ul id="lista">
+    <li>item</li>
+   </ul>
+</body>
+</html>
+<script>
+    const input=document.getElementById("nombre")
+    const p=document.getElementById("saida")
+
+    input.addEventListener("input",function(){
+        p.textContent=`${input.value}`
+        let i=(document.getElementById("nombre").value).length
+       if(i<5){
+        p.textContent="Aumenta mais letras"
+        }else{
+             p.textContent=`${input.value}`
+        }
+    })
+
+    const ul=document.getElementById("lista")
+    ul.addEventListener("click",function(e){
+        alert(`Você clicou em ${e.target.textContent}`)
+        ul.innerHTML+= "<li>novo item</li>"
+    })
+</script>

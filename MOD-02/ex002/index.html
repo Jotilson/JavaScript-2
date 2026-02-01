@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+   <button id="btn">Clique aqui</button>
+   <input type="text" name="" id="nombre">
+   <p id="saida"></p>
+   <ul id="lista">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+   </ul>
+</body>
+</html>
+
+<script>
+    const botao=document.getElementById("btn")
+    botao.addEventListener("click",function(){
+        alert("botão clicado!")
+    })
+    const input=document.getElementById("nombre")
+    const p= document.getElementById("saida")
+    document.addEventListener("mouseup",function(){
+        alert(`${event.key}`)
+    })
+ window.addEventListener("scroll",function(){
+    alert("oi")
+ })
+    input.addEventListener("input",function(){
+      
+             p.textContent=`Você digitou2: ${input.value}`
+        
+       
+      
+    })
+    const ul=document.getElementById("lista")
+    
+    ul.addEventListener("click",function(e){
+        alert(`Você clicou em ${e.target.textContent}`)
+        ul.innerHTML+="<li>item novo</li>"
+    })
+   
+
+</script>
