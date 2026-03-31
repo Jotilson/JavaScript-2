@@ -5,50 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
     <link rel="stylesheet" href="estilos/style.css">
+     <script src="https://kit.fontawesome.com/f220fb1464.js" crossorigin="anonymous"></script>
 </head>
 <body>
+ 
+   
     <main >
+        <article id="Capa">
+            <section id="Contracapa">
+              <div>
+                  <h3><a href="index.html">Menu de Informações</a></h3>
+                  <i class="fa-solid fa-circle-info fa-2xl" style="color: #74C0FC;"></i>
+              </div>
+              <div><h3><a href="paginas/previsao.html">Previsões do Clima</a></h3><i class="fa-brands fa-chromecast fa-2xl" style="color: #74C0FC;"></i></div>
+              <div><h3><a href="paginas/devs.html">Desenvolvedores</a></h3> <i class="fa-solid fa-code fa-2xl" style="color: #74C0FC;"></i></div>
+              <div><h3><a href="paginas/colaboradores.html">Colaboradores</a></h3><i class="fa-solid fa-handshake-angle fa-2xl" style="color: #74C0FC;"></i></div>
+            </section>
+        </article>
+        
        
         <header>
+            
             <h1>Meteorologia Atual</h1>
+             <aside id="menu"><i class="fa-solid fa-bars fa-2xl" style="color: #63E6BE;"></i></aside>
             <p>Fique atento ao tempo da sua cidade!</p>
              <aside id="imga"><img id="img" alt=""></aside>
+            
         </header>
 
         <aside class="pesquisa">
-            <p><label for="nameCity">Informe o nome da cidade <input type="text" name="" id="nameCity"></label></p>
+            <p><label for="nameCity">Informe o nome da cidade <input style="height: 5vh;" type="text" name="nameCity" id="nameCity"></label></p>
             <p>ou primeiro o nome do pais e depois a cidade. Ex: Portugal, Viana</p><br>
+
             <button type="submit" id="btnBuscar">Buscar</button>
         </aside>
         <br><br>
         <fieldset>
+           
 
-            <div><p>Nascer do Sol:</p>
+            <div><i class="fa-solid fa-sun fa-xl" style="color: #FFD43B;"></i>
+                <p>Nascer do Sol:</p>
                 <p id="nascSol"></p>
             </div>
 
-             <div><p>Pôr do Sol:</p><p id="porSol"></p>
+             <div><i class="fa-solid fa-sun fa-lg"></i>
+                <p>Pôr do Sol:</p><p id="porSol"></p>
              </div>
             <div>
-               
+               <i class="fa-solid fa-city fa-lg" style="color: #74C0FC;"></i>
              <p>Cidade:</p> <p id="nomeCity"></p>
             </div>
-            <div><p>País:</p><p id="pais"></p></div>
+            <div><i class="fa-solid fa-earth-africa" style="color: #74C0FC;"></i>
+                <p>País:</p><p id="pais"></p></div>
             <div>
+                <i class="fa-solid fa-sun-plant-wilt fa-lg" style="color: #63E6BE;"></i>
                 <p>Estado do clima:</p> <p id="estado"></p>
             </div>
-            <div><p>Temperatura:</p><p id="temp"></p></div>
-            <div><p>Temperatura mínima:</p><p id="tpmin"></p></div>
-            <div><p>Temperatura máxima:</p><p id="tpmax"></p></div>
+            <div><i class="fa-solid fa-temperature-full fa-lg" style="color: #63E6BE;"></i>
+                <p>Temperatura:</p><p id="temp"></p></div>
+            <div><i class="fa-solid fa-temperature-arrow-down fa-lg" style="color: #63E6BE;"></i>
+                <p>Temperatura mínima:</p><p id="tpmin"></p></div>
+            <div><i class="fa-solid fa-temperature-arrow-up fa-lg" style="color: #63E6BE;"></i>
+                <p>Temperatura máxima:</p><p id="tpmax"></p></div>
             <div>
+                <i class="fa-solid fa-cloud-sun fa-lg" style="color: #63E6BE;"></i>
                 <p>Sensação Térmica:</p><p id="st"></p>
             </div>
-            <div><p>Umidade:</p><p id="umid"></p></div>
-            <div><p>Pressão:</p><p id="ps"></p></div>
-            <div><p>Visibilidade:</p><p id="vs"></p></div>
-            <div><p>Vento:</p><p id="vt"></p></div>
-            <div><p>Nuvem:</p><p id="nv"></p></div>
-            <div><p>Nível do mar:</p><p id="nvM"></p></div>
+            <div><i class="fa-solid fa-house-flood-water fa-lg" style="color: #63E6BE;"></i><p>Umidade:</p><p id="umid"></p></div>
+            <div><i class="fa-brands fa-wpressr fa-lg" style="color: #63E6BE;"></i><p>Pressão:</p><p id="ps"></p></div>
+            <div><i class="fa-solid fa-eye fa-lg" style="color: #63E6BE;"></i><p>Visibilidade:</p><p id="vs"></p></div>
+            <div><i class="fa-solid fa-wind fa-lg" style="color: #63E6BE;"></i><p>Vento:</p><p id="vt"></p></div>
+            <div><i class="fa-regular fa-cloud fa-lg" style="color: #74C0FC;"></i><p>Nuvem:</p><p id="nv"></p></div>
+            <div><i class="fa-solid fa-water fa-lg" style="color: #63E6BE;"></i><p>Nível do mar:</p><p id="nvM"></p></div>
         </fieldset>
     </main>
 </body>

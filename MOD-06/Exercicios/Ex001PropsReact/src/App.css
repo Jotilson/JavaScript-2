@@ -1,0 +1,13 @@
+ 
+ @font-face {
+  font-family: 'Saw';
+  src: url('assets/Momo_Signature/MomoSignature-Regular.ttf') format('truetype');
+ }
+ .h1{
+  font-family: 'Saw';
+  margin-bottom:5%;
+  }
+  .footer{
+    background-color:black ;
+    padding: 40px;
+  }

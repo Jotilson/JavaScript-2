@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="PaginasEsitlos/stylePrevisao.css">
+      <script src="https://kit.fontawesome.com/f220fb1464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+            
+            <h1>Meteorologia Atual</h1>
+             <aside id="menu"><i class="fa-solid fa-bars fa-2xl" style="color: #63E6BE;"></i></aside>
+            <p>Fique atento ao tempo da sua cidade!</p>
+             
+            
+        </header>
+    <main>
+        <article id="Capa">
+            <section id="Contracapa">
+              <div>
+                  <h3><a href="../index.html">Menu de Informações</a></h3>
+                  <i class="fa-solid fa-circle-info fa-2xl" style="color: #74C0FC;"></i>
+              </div>
+              <div><h3><a href="previsao.html">Previsões do Clima</a></h3><i class="fa-brands fa-chromecast fa-2xl" style="color: #74C0FC;"></i></div>
+              <div><h3><a href="devs.html">Desenvolvedores</a></h3> <i class="fa-solid fa-code fa-2xl" style="color: #74C0FC;"></i></div>
+              <div><h3><a href="colaboradores.html">Colaboradores</a></h3><i class="fa-solid fa-handshake-angle fa-2xl" style="color: #74C0FC;"></i></div>
+            </section>
+        </article>
+        
+        <br>
+      <section class="video">
+        <video id="vd" autoplay muted  loop src="videos/apresentacao.mp4"></video>
+
+      </section>
+
+        <div class="pesquisa">
+            <p><label for="nameCity">Informe o nome da cidade <input style="height: 5vh;" type="text" name="nameCity" id="nameCity" ></label></p>
+
+            <button id="btn">Definir a cidade</button>
+        </div>
+        <br><br>
+
+         <article class="conteudo">
+
+            <section class="navBar" id="nav">
+      
+         <i class="fa-solid fa-calendar-days fa-2xl" style="color: #ffed2c; "></i>
+         
+            </section>
+
+            <section class="infoClima">
+           
+            <aside>
+                <h3>Nascer do Sol:</h3>
+                <p id="nascSol"></p>
+            </aside>
+            <aside><h3>Pôr do Sol:</h3>
+            <p id="porSol"></p></aside>
+            <aside><h3>Estado do Clima:</h3>
+            <p id="estClima"></p></aside>
+
+            <aside><h3>Nuvens:</h3>
+            <p id="nv"></p></aside>
+            <aside><h3>Temperatura:</h3>
+            <p id="temp"></p></aside>
+            <aside><h3>Nível do mar:</h3><p id="nvMar"></p></aside>
+            <aside><h3>Vento:</h3><p id="vt"></p></aside>
+            <aside><h3>Umidade:</h3><p id="um"></p></aside>
+            <aside><h3>Probabilidade de precipitação:</h3><p id="pp"></p></aside>
+            <aside><h3>Chuva Prevista:</h3><p id="ChvP"></p></aside>
+
+            </section>
+
+         </article>
+        <br>
+    </main>
+    <footer><p>Site criado pela NewsTech</p></footer>
+</body>
+</html>
+<script src="PaginasJavaScript/previsaoScript.js"></script>

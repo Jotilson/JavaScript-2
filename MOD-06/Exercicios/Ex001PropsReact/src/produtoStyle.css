@@ -1,0 +1,46 @@
+
+ .div{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 100px;
+ }
+ 
+
+  .titulo, p{
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 800;
+}
+
+ .caixaProduto{
+    background-color: black;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px green;
+}
+ .caixaProduto:hover{cursor: pointer;}
+div img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+ #info{
+ position: fixed;
+  top: 40%;
+color: white;
+  background-color: rgb(202, 82, 26) ;
+border-radius: 5px;
+box-shadow: 2px 2px 3px black;
+overflow-y: scroll;
+ bottom: 0;
+ display: none;
+}
+
+@media screen and (min-width:768px) {
+  div img{
+    width: 50%;
+    border-radius: 5px;
+}  
+}

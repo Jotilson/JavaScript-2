@@ -4,9 +4,42 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+ #Capa{
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(253, 253, 104, 0.848);
+    position: absolute;
+   display: none;
+   box-shadow: 2px 2px 4px rgb(26, 29, 214);
+    z-index: 1;
+ }
+#Contracapa{
+    
+    width: 99%;
+   height: 50vh;
+   background-color: rgb(55, 55, 245);
+   display: block;
+   margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  font-size: smaller;
+
 }
+#Contracapa div{
+    display: flex;
+    justify-content: space-between;
+}
+ a{
+    color: white;
+    text-decoration: none;
+    
+ }
 header{
    background-image: linear-gradient(to bottom, rgb(21, 75, 235),rgb(0, 102, 255));
    padding: 10px;
@@ -16,10 +49,17 @@ header{
     
 }
 #imga{
-   
       display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+  transition: img 1.5s ease-in 1.5s;
+}
+#menu{
+     display: flex;
+    justify-content: flex-end;
+   flex-direction: row;
+   align-content: flex-start;
+   cursor: pointer;
 }
 
 h1{
@@ -37,33 +77,73 @@ margin-bottom: 1.5%;
 div{
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
-    width: 100%;
+    gap: 3px;
+    width: 98%;
     height: 10vh;
     border-radius: 5px;
     color: white;
     background-color: rgb(0, 98, 255);
-margin-bottom: 5%;
-display: block;
+ align-items: center;
+
 }
 fieldset{
-    background-image: linear-gradient(to left, yellow, blue);
+    background-image: linear-gradient(to left, rgba(255, 255, 0, 0.328), rgba(0, 0, 255, 0.335),transparent);
     width: 90%;
-    height: 80vh;
+    height: 50%;
     padding: 5px;
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: 100px 100px ;
+    gap: 5px;
+    grid-template-columns: auto auto  ;
+    grid-template-rows: 90px 90px ;
+    grid-auto-rows: 90px;
     justify-content:space-between;
     justify-items: center;
+   align-content: center;
     border: 3px solid rgb(0, 187, 255);
     border-radius: 4px;
 }
 button{
-    background-image: linear-gradient(to right, rgb(18, 78, 245), rgba(255, 255, 0, 0.772));
+    background-color: rgb(17, 91, 238);
     padding: 8px;
-    border: 2px solid rgba(71, 71, 224, 0.842);
+    border: 2px solid rgba(255, 255, 0, 0.574);
     border-radius: 3px;
     color: white;
+    width: 20%;
+    font-size: 18px;
+      cursor: pointer;
 }
+
+ button:active{
+     background-color: rgba(17, 91, 238, 0.633);
+  
+    border: 2px solid rgba(255, 255, 0, 0.937);
+
+ }
+@media screen and (min-width:768px) {
+     fieldset{
+        grid-template-columns: auto auto auto ;
+    grid-template-rows: 90px 90px 90px ;
+    grid-auto-rows: 90px;
+    justify-content: space-around;
+    justify-items: center;
+     align-content: center;
+    }
+    div{
+        align-items: center;
+    }
+   
+}
+ @media screen and (min-width:1300px) {
+     fieldset{
+         height: 60vh;
+        grid-template-columns: auto auto auto ;
+    grid-template-rows: 100px 100px 100px ;
+     justify-content: space-around;
+     justify-items: center;
+     align-content: center;
+     grid-auto-rows: 100px;
+    }
+    
+}
+ 

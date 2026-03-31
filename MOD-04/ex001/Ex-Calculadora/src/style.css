@@ -1,0 +1,43 @@
+.resultado {
+  display: inherit;
+  margin-bottom: 3%;
+  height: 10vh;
+}
+p {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+section {
+  background-color: rgba(0, 0, 0, 0.409);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  grid-auto-columns: auto;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+div {
+  background-color: white;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black;
+  border: 2px groove black;
+}
+div:hover {
+  background-color: rgba(190, 190, 190, 0.819);
+}
+div:active {
+  background-color: rgba(190, 190, 190, 0.819);
+}
